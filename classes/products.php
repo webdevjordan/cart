@@ -1,5 +1,4 @@
 <?php 
-A
 /**
  * author<webdevjordan> email<jordan.q.wynne@gmail.com>
  * 
@@ -48,7 +47,6 @@ class Products {
                 return array(
                     'name' => $product['item'],
                     'price' => $product['price'],
-		    B
                     'stock' => $product['stock']
                 ); 
             }
@@ -83,7 +81,6 @@ class Products {
      * @return $_SESSION
      */
     public function getCartItems() 
-	    B
     {
         if(isset($_SESSION['cart'])) {
             return $_SESSION['cart'];
@@ -98,7 +95,6 @@ class Products {
     {
         if ($this->getCartItems() != null) {
             return count($this->getCartItems());
-	    A
         }
         return 0;
     }
