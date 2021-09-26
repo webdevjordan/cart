@@ -1,7 +1,7 @@
 <?php 
 session_start();
 require './header.php';
-require './classes/prodcuts.php';
+require './classes/products.php';
 $products = new Products();
 if(isset($_POST['item'])) {
     $products->removeFromCart($_POST['item']);

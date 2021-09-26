@@ -1,7 +1,7 @@
 <?php
     session_start();
     require './header.php';
-    require './classes/prodcuts.php';
+    require './classes/products.php';
     $object = new Products();
     $products = $object->getProdcuts();
     if(isset($_POST['item'])) {
