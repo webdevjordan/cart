@@ -6,8 +6,8 @@
  * product information with dummy products
  * 
 */
-class Products {
-
+class Products
+{
     private $products = array();
 
     /**
